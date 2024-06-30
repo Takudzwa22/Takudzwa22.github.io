@@ -63,6 +63,23 @@
         <p>Website created by Takudzwa &copy; 2024</p>
     </footer>
 
+    <!-- JavaScript to control footer visibility -->
+    <script>
+        // JavaScript to show/hide footer based on scroll position
+window.addEventListener('scroll', function() {
+    var footer = document.querySelector('footer');
+    var scrollPosition = window.scrollY + window.innerHeight;
+    var footerPosition = footer.offsetTop + footer.offsetHeight;
+
+    if (scrollPosition >= footerPosition) {
+        footer.style.display = 'block'; // Show footer when scrolled to bottom
+    } else {
+        footer.style.display = 'none'; // Hide footer otherwise
+    }
+});
+
+    </script>
+
 </body>
 </html>
 
