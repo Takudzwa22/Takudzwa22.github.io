@@ -44,7 +44,7 @@ header p {
 }
 
 header a {
-    color: #fff;
+    color: white; /* Keeping header links white for visibility against dark background */
     text-decoration: none;
 }
 header a:hover {
