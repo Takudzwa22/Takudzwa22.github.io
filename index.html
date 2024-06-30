@@ -13,7 +13,12 @@
 
     <!-- Header section -->
     <header>
+        <div class="profile-image">
+            <img src="profile.jpg" alt="Takudzwa's Profile Picture"> <!-- Replace with actual image path -->
+        </div>
         <h1>Takudzwa's Portfolio</h1>
+        <p><a href="https://gisma.com" target="_blank">Gisma University of Applied Sciences</a></p>
+        <p><a href="Takudzwa R. Mambwere - CV..pdf" download>Download CV</a> | <a href="project-report.pdf" download>Download Project Report</a></p>
     </header>
 
     <!-- Navigation section -->
@@ -21,8 +26,10 @@
         <ul>
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -38,7 +45,31 @@
         <!-- Education section -->
         <section id="education">
             <h2>Education</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            <div class="education-item">
+                <img src="school-logo1.jpg" alt="School Logo 1"> <!-- Replace with actual image path -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            </div>
+            <div class="education-item">
+                <img src="school-logo2.jpg" alt="School Logo 2"> <!-- Replace with actual image path -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            </div>
+            <div class="education-item">
+                <img src="school-logo3.jpg" alt="School Logo 3"> <!-- Replace with actual image path -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            </div>
+        </section>
+
+        <!-- Experience section -->
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <img src="company-logo1.jpg" alt="Company Logo 1"> <!-- Replace with actual image path -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            </div>
+            <div class="experience-item">
+                <img src="company-logo2.jpg" alt="Company Logo 2"> <!-- Replace with actual image path -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+            </div>
         </section>
 
         <!-- Skills section -->
@@ -51,35 +82,37 @@
         <section id="portfolio">
             <h2>Portfolio</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
-            <!-- Links to CV and Project Report -->
-            <p><a href="Takudzwa R. Mambwere - CV..pdf" download>Download CV</a> | <a href="project-report.pdf" download>Download Project Report</a></p>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: takudzwa@example.com</p> <!-- Replace with actual email -->
+            <p>Phone: +1234567890</p> <!-- Replace with actual phone number -->
         </section>
 
     </main>
 
     <!-- Footer section -->
     <footer>
-        <p><a href="https://gisma.com" target="_blank">Gisma University of Applied Sciences</a></p>
         <p>Website created by Takudzwa &copy; 2024</p>
     </footer>
 
     <!-- JavaScript to control footer visibility -->
     <script>
         // JavaScript to show/hide footer based on scroll position
-window.addEventListener('scroll', function() {
-    var footer = document.querySelector('footer');
-    var scrollPosition = window.scrollY + window.innerHeight;
-    var footerPosition = footer.offsetTop + footer.offsetHeight;
+        window.addEventListener('scroll', function() {
+            var footer = document.querySelector('footer');
+            var scrollPosition = window.scrollY + window.innerHeight;
+            var footerPosition = document.body.offsetHeight;
 
-    if (scrollPosition >= footerPosition) {
-        footer.style.display = 'block'; // Show footer when scrolled to bottom
-    } else {
-        footer.style.display = 'none'; // Hide footer otherwise
-    }
-});
-
+            if (scrollPosition >= footerPosition) {
+                footer.style.display = 'block'; // Show footer when scrolled to bottom
+            } else {
+                footer.style.display = 'none'; // Hide footer otherwise
+            }
+        });
     </script>
 
 </body>
 </html>
-
