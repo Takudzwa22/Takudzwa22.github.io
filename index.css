@@ -120,6 +120,16 @@ section p {
     line-height: 1.8;
 }
 
+/* Style for links */
+a {
+    color: blue; /* Makes all other links blue */
+    text-decoration: none; /* Optional: removes the underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Optional: adds underline on hover */
+}
+
 /* Footer styles */
 footer {
     background-color: #333;
